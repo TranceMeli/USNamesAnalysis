@@ -1,5 +1,8 @@
 # US Baby Names Analysis
 
+![US Baby Names Dataset](assets/image.png)
+https://www.kaggle.com/datasets/kaggle/us-baby-names
+
 ![Python](https://img.shields.io/badge/Python-3.13-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![Pandas](https://img.shields.io/badge/Pandas-2.x-150458?style=for-the-badge&logo=pandas&logoColor=white)
 ![SQLite](https://img.shields.io/badge/SQLite-3.x-003B57?style=for-the-badge&logo=sqlite&logoColor=white)
@@ -68,10 +71,18 @@ It includes:
 
 Plotly is used for the interactive visualizations and dashboard.
 
+![Dashboard Preview](assets/dashboard_names.png)
+
+> GitHub does not execute JavaScript in notebook previews, so the dashboard above is shown as a static image. To use the fully interactive version (zoom, hover tooltips, the interactive US map), download the repository and run `notebooks/04_dashboard.ipynb` yourself.
+
 ## Project Structure
 
 ```text
 Names/
+│
+├── assets/
+│   ├── image.png
+│   └── dashboard.png
 │
 ├── data/
 │   ├── raw/
@@ -90,10 +101,10 @@ Names/
 
 ```bash
 # Clone the repository
-git clone https://github.com/TranceMeli/Names.git
+git clone https://github.com/TranceMeli/USNamesAnalysis.git
 
 # Install dependencies
-pip install pandas matplotlib seaborn plotly nbformat
+pip install pandas matplotlib seaborn plotly nbformat kaleido
 
 # Run the notebooks in order
 jupyter notebook notebooks/01_exploration.ipynb
